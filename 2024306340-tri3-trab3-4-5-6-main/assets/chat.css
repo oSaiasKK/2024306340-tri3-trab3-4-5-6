@@ -1,0 +1,53 @@
+html, body {
+margin: 0;
+padding: 0;
+}
+
+body {
+display: grid;
+grid-template-rows: 100px 1fr 50px;
+height: 100vh;
+background-color: black;
+font-size: 15px;
+font-weight: lighter;
+font-family: 'Courier New', monospace;
+color: #00ff00 ;
+}
+
+header {
+display: flex;
+align-items: center;
+padding: 0 20px;
+border: 2px solid#00ff00;
+}
+
+main {
+    border: 2px solid#00ff00;
+    margin-top: -2px;
+}
+
+main .message {
+display: grid;
+grid-template-rows: 1fr auto;
+margin: 10px;
+padding: 10px;
+border-radius: 10px;
+max-width: 50%;
+}
+
+main .message .time {
+margin: .5rem 0 0 0;
+padding: .5rem 0 0 0;
+font-style: italic;
+border-top: 1px solid #00ff00;
+}
+
+main .message.owner {
+justify-self: end;
+background-color: #00ff00;
+}
+
+footer  {
+display: grid;
+grid-template-columns: 1fr auto;
+}
